@@ -1,0 +1,28 @@
+body { 
+    background-color: #0f0f0f; 
+    color: white; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0; 
+}
+.container { padding: 15px; }
+
+/* Logo y Marca */
+.header-oficial { margin-top: 20px; }
+.logo-texto { font-size: 32px; letter-spacing: -1px; margin: 0; }
+.crl { color: #00ff00; }
+.divisor { height: 2px; background: linear-gradient(to right, transparent, #00ff00, transparent); margin: 10px auto; width: 80%; }
+.status { color: #00ff00; font-size: 12px; font-weight: bold; animation: parpadeo 2s infinite; }
+
+/* Reloj Digital */
+.reloj-container { background: #1a1a1a; padding: 15px; border-radius: 15px; border: 1px solid #333; margin: 20px 0; }
+#reloj { font-size: 35px; font-weight: bold; color: #fff; font-family: monospace; }
+.fecha-hoy { color: #888; margin-top: 5px; font-size: 14px; }
+
+/* Animación parpadeante */
+@keyframes parpadeo { 0% { opacity: 0.2; } 50% { opacity: 1; } 100% { opacity: 0.2; } }
+
+/* Footer */
+.footer { margin-top: 40px; font-size: 11px; color: #444; }
+
+/* Botones de Admin (Para cuando entres a admin.html) */
+.btn-verde { background-color: #00ff00; color: black; border: none; padding: 15px; width: 100%; font-weight: bold; border-radius: 10px; cursor: pointer; }
