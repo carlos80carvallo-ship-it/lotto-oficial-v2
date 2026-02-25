@@ -1,0 +1,35 @@
+body { 
+    background-color: #0b0b0b; 
+    color: white; 
+    font-family: 'Arial', sans-serif; 
+    text-align: center;
+    margin: 0;
+}
+.container { padding: 20px; }
+.logo-texto { font-size: 35px; margin-bottom: 5px; }
+.crl { color: #00ff00; text-shadow: 0 0 10px #00ff00; }
+.divisor { height: 2px; background: linear-gradient(to right, transparent, #00ff00, transparent); margin: 15px auto; width: 70%; }
+.status { color: #00ff00; font-size: 13px; font-weight: bold; }
+
+.reloj-container { 
+    background: #151515; 
+    padding: 20px; 
+    border-radius: 20px; 
+    border: 1px solid #333; 
+    margin: 25px auto;
+    max-width: 300px;
+}
+#reloj { font-size: 40px; font-family: monospace; color: #fff; }
+
+.btn-verde { 
+    background-color: #00ff00; 
+    color: black; 
+    border: none; 
+    padding: 15px 30px; 
+    font-weight: bold; 
+    border-radius: 12px; 
+    cursor: pointer; 
+    width: 100%;
+    margin-top: 20px;
+}
+.footer { color: #444; font-size: 11px; margin-top: 50px; }
