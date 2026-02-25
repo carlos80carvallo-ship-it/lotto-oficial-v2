@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>LottoApp CRL | Historial</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="glass-container">
+        <header>
+            <h1 class="neon-text">LOTTO ACTIVO</h1>
+            <div class="search-box">
+                <input type="date" id="date-picker" onchange="changeDate()">
+            </div>
+            <div id="current-date" class="date-badge"></div>
+            <div id="live-indicator"><span class="dot"></span> EN VIVO</div>
+        </header>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>HORA</th>
+                        <th>LUN</th><th>MAR</th><th>MIÉ</th><th>JUE</th><th>VIE</th><th>SÁB</th><th>DOM</th>
+                    </tr>
+                </thead>
+                <tbody id="main-table"></tbody>
+            </table>
+        </div>
+
+        <div class="action-bar">
+            <button onclick="saveToSupabase()" class="btn btn-save">💾 GUARDAR</button>
+            <button onclick="resetWeek()" class="btn btn-reset">🔄 REINICIAR</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
